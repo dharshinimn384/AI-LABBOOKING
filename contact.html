@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #ae83fd;
+  padding: 20px;
+}
+</style>
+</head>
+<body style="background-color: rgb(191, 179, 235);">
+
+<center><h3>Contact Form</h3></center>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="firstname" placeholder="Your name..">
+
+    <label for="Email">Email</label><br><br>
+    <input type="email" id="Email" name="Email" placeholder="Enter your email"><br><br>
+
+    
+  
+    <label for="Message">Message</label>
+    <textarea id="Message" name="Message" placeholder="Ask your help..." style="height:200px"></textarea>
+
+    <center><input type="submit" value="Submit"></center>
+  </form>
+</div>
+
+</body>
+</html>
